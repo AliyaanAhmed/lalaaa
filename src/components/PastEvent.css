@@ -1,0 +1,142 @@
+.past-event-container {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.main-heading {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: -30px;
+  color: #FFC40A;
+  margin-top: 50px;
+}
+
+
+.event-info {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.portfolio-btn {
+  border-radius: 50px;
+  padding: 15px 30px;
+  background-color: #FFC40A;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-btn:hover {
+  background-color: #E6A509;
+}
+
+.image-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -180px;
+
+}
+
+.next-btn {
+  background-color: #FFC40A;
+  border: none;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: color 0.3s ease-in-out;
+  border-radius: 20%;
+  margin-right: 150px;
+  top: 50;
+
+  
+}
+
+.prev-btn {
+  background-color: #FFC40A;
+  border: none;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: color 0.3s ease-in-out;
+  border-radius: 20%;
+  margin-left: 150px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: #E6A509;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-image {
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: fill;
+  margin-top: 0px;
+  border-radius: 2%;
+  object-fit: contain; /* Use object-fit: contain to fit the entire image within the container */
+  border-radius: 2%;
+  border: 2px solid #FFC40A; /* Add border to the image */
+  box-sizing: border-box;
+}
+
+
+.image-container:hover {
+  transform: scale(1.1);
+}
+
+.button-container {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 36px;
+  }
+
+  .event-info {
+    font-size: 20px;
+  }
+
+  .portfolio-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .next-btn,
+  .prev-btn {
+    font-size: 24px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .image-container {
+    height: 400px;
+  }
+}

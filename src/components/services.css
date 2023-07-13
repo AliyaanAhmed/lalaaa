@@ -1,0 +1,63 @@
+.container {
+  margin-top: 55px; /* Adjust the top margin as per your requirement */
+  margin-bottom: 55px; /* Adjust the bottom margin as per your requirement */
+}
+.col-sm-4 {
+  padding: 50px;
+}
+
+.flipy {
+  -webkit-perspective: 800;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.flipy .card:hover {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.flipy .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+
+.flipy .card .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  z-index: 2;
+}
+
+.flipy .card .front {
+  position: absolute;
+  z-index: 1;
+  background: #f8f8f8;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.flipy .card .front img,
+.flipy .card .back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Add this line */
+}
+
+.flipy .card .back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  background: blue;
+  background: #f8f8f8;
+  color: black;
+  cursor: pointer;
+  overflow: hidden;
+}
