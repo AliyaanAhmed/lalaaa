@@ -43,11 +43,15 @@ function OurEvents() {
 
     <div className="container">
     <div className="row">
+      
       <div className="flip-card">
+        
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <img src={Services4} alt="Card Front Image" />
+            <div className="card-title">YS CONCERT</div>
           </div>
+          
           <div className="flip-card-back">
             <div className="card-content">
               <h2>Card Title</h2>
@@ -63,6 +67,7 @@ function OurEvents() {
           </div>
         </div>
       </div>
+    
 
       <div className="flip-card">
         <div className="flip-card-inner">

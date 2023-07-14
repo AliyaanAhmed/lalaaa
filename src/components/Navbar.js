@@ -29,13 +29,18 @@ function Navbar() {
     }
   }, [scrollPosition]);
 
-  const openBar = () => {
+  const toggleNavbar = () => {
     setIsBarOpened(!isBarOpened);
+    if (!isBarOpened) {
+      document.querySelector('.navbar ul').classList.add('opened');
+      document.querySelector('.navopened').classList.add('opened');
+    } else {
+      document.querySelector('.navbar ul').classList.remove('opened');
+      document.querySelector('.navopened').classList.remove('opened');
+    }
   };
   const handleLinkClick = () => {
-    if (isBarOpened) {
-      setIsBarOpened(false);
-    }
+    setIsBarOpened(false);
   };
 
   const handleGoTopClick = () => {
@@ -46,7 +51,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar" style={{ backgroundColor: navbarColor }}>
+    <nav className={`navbar${isBarOpened ? ' opened' : ''}`} style={{ backgroundColor: navbarColor }}>
       <div className="container">
         <div className="row">
           <div className="logo-container">
@@ -105,7 +110,6 @@ function Navbar() {
               >
                 About
               </Link>
-              
             </li>
             <li>
               <Link
@@ -120,29 +124,27 @@ function Navbar() {
               >
                 Past Events
               </Link>
-              
             </li>
           </ul>
-          <div className="button" onClick={openBar}>
+          <div className="button" onClick={toggleNavbar}>
             <div className="burger"></div>
             <div className="burger"></div>
             <div className="burger"></div>
           </div>
-       
           <div>
-              <Link
-                activeClass="active"
-                to="bookings"
-                spy={true}
-                smooth={true}
-                duration={1000}
-                className="book-now-button "
-                onClick={handleLinkClick}
-                offset={-200}
-              >
-                Book Now!
-              </Link>
-            </div>
+            <Link
+              activeClass="active"
+              to="bookings"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              className="book-now-button"
+              onClick={handleLinkClick}
+              offset={-200}
+            >
+              Book Now!
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
