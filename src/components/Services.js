@@ -6,51 +6,53 @@ import card3 from '../img/card3.jpg'
 
 function Card(props) {
   return (
-    
-    <div className="container">
-          <h1 className="myservicesheading">OUR SERVICES</h1>
-      <div className="row">
-        <div className="col-sm-4">
-          <div className="flipy">
-            <div className="card">
-              <div className="face front">
-                <img src={card1} alt="Front" />
+
+    <>
+     <h1 className="umyservicesheading">OUR SERVICES</h1>
+      <div className="container">
+        <div className="row">
+
+          <div className="ucontainer">
+            <div className="ucard" style={{ '--clr': '#FFC40A' }}>
+              <div className="uimg-box">
+                <img src={card1} alt="Desert" />
               </div>
-              <div className="face back">
-                <img src="http://davidwalsh.name/demo/logo.png" alt="Back" />
+              <div className="ucontent">
+                <h2 className='utext'>WEDDING</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, hic? Magnam eum error saepe doloribus corrupti repellat quisquam alias doloremque!
+                </p>
+                <a href="">Read More</a>
+              </div>
+            </div>
+            <div className="ucard" style={{ '--clr': '#87CEEB' }}>
+              <div className="uimg-box">
+                <img src= {card2} alt="Mountains" />
+              </div>
+              <div className="ucontent">
+                <h2>CONCERT</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, hic? Magnam eum error saepe doloribus corrupti repellat quisquam alias doloremque!
+                </p>
+                <a href="">Read More</a>
+              </div>
+            </div>
+            <div className="ucard" style={{ '--clr': '#FFC40A' }}>
+              <div className="uimg-box">
+                <img src={card3} alt="Ocean" />
+              </div>
+              <div className="ucontent">
+                <h2>CORPORATE EVENTS</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, hic? Magnam eum error saepe doloribus corrupti repellat quisquam alias doloremque!
+                </p>
+                <a href="">Read More</a>
               </div>
             </div>
           </div>
         </div>
-
-        <div className="col-sm-4">
-          <div className="flipy">
-            <div className="card">
-              <div className="face front">
-                <img src={card2} alt="Front" />
-              </div>
-              <div className="face back">
-                <img src="http://davidwalsh.name/demo/logo.png" alt="Back" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-sm-4">
-          <div className="flipy">
-            <div className="card">
-              <div className="face front">
-                <img src={card3} alt="Front" />
-              </div>
-              <div className="face back">
-                <img src="http://davidwalsh.name/demo/logo.png" alt="Back" />
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
+    </>
   );
 }
 

@@ -70,7 +70,7 @@ const PastEvent = () => {
         >
           <img src={images[currentImage]} alt={`Event ${currentImage + 1}`} className="event-image" />
           <div className='button-container'>
-            <button className="portfolio-btn" onClick={handleSeePortfolio}>SEE OUR PORTFOLIO</button>
+            <button className="ubtn btn1" onClick={handleSeePortfolio}>SEE OUR PORTFOLIO</button>
           </div>
         </div>
         <button className="next-btn" onClick={handleNextImage} disabled={isButtonClicked}>

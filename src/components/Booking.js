@@ -86,7 +86,7 @@ const Bookings = () => {
             <option value="Corporate Event">Corporate Event</option>
           </select>
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="ubtn btn1">
           Submit
         </button>
       </form>

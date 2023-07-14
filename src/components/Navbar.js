@@ -95,12 +95,13 @@ function Navbar() {
             <li>
               <Link
                 activeClass="active"
-                to="about-scroll"
+                to="sec-title"
                 spy={true}
                 smooth={true}
                 duration={1000}
                 onClick={handleLinkClick}
                 style={{ color: navbarTextColor }}
+                offset={-200}
               >
                 About
               </Link>
@@ -135,7 +136,7 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 duration={1000}
-                className="book-now-button"
+                className="book-now-button "
                 onClick={handleLinkClick}
                 offset={-200}
               >

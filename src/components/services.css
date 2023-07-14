@@ -1,63 +1,134 @@
-.container {
-  margin-top: 55px; /* Adjust the top margin as per your requirement */
-  margin-bottom: 55px; /* Adjust the bottom margin as per your requirement */
-}
-.col-sm-4 {
-  padding: 50px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.utext {
+
+  color: #87CEEB;
+  margin-top: 20;
 }
 
-.flipy {
-  -webkit-perspective: 800;
-  width: 100%;
-  height: 300px;
-  position: relative;
-  border: 1px solid #ccc;
+.umyservicesheading {
+  text-align: center;
+  color: #FFC40A;
+  font-weight: bold;
+  margin-bottom: -20px;
+  margin-top: 40px;
 }
 
-.flipy .card:hover {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
+
+.ucontainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
 }
 
-.flipy .card {
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: 0.5s;
+.ucontainer .ucard {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 }
 
-.flipy .card .face {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -webkit-backface-visibility: hidden;
-  z-index: 2;
+.ucontainer .ucard:hover {
+    height: 400px;
 }
 
-.flipy .card .front {
-  position: absolute;
-  z-index: 1;
-  background: #f8f8f8;
-  color: white;
-  cursor: pointer;
-  overflow: hidden;
+.ucontainer .ucard .uimg-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+    border: 2px solid #FFC40A;
 }
 
-.flipy .card .front img,
-.flipy .card .back img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Add this line */
+.ucontainer .ucard:hover .uimg-box {
+    top: -100px;
+    scale: 0.8;
+    box-shadow: 0 12px 35px #FFC40A;
 }
 
-.flipy .card .back {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  background: blue;
-  background: #f8f8f8;
-  color: black;
-  cursor: pointer;
-  overflow: hidden;
+.ucontainer .ucard .uimg-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ucontainer .ucard .ucontent {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.ucontainer .ucard:hover .ucontent {
+    top: 130px;
+    height: 250px;
+}
+
+.ucontainer .ucard .ucontent h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.ucontainer .ucard .ucontent p {
+    color: #333;
+}
+
+.ucontainer .ucard .ucontent a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--clr);
+    color: white;
+    font-weight: 500;
+}
+
+.ucontainer .ucard .ucontent a:hover {
+    opacity: 0.8;
+    background-color: #000000;
+    color: aqua;
+}
+
+@media (max-width: 480px) {
+    .ucontainer .ucard {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .ucontainer .ucard .uimg-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .ucontainer .ucard .ucontent p {
+        font-size: 0.8rem;
+    }
+
+    .container .ucard .ucontent a {
+        font-size: 0.9rem;
+    }
 }

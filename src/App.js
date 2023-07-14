@@ -15,6 +15,7 @@ function App() {
 
         <Routes>
           <Route path='/' element={<Home />} />
+          
           <Route path='/our-event' element={<OurEvent />} />
          
         </Routes>
