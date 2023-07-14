@@ -7,7 +7,7 @@ import Services2 from '../img/Service2.jpg';
 import Services3 from '../img/Service3.jpg';
 import Services4 from '../img/Service4.jpg';
 import myvideo1 from '../img/video1.mp4';
-
+import festivelogo from '../img/festive.png';
 
 function OurEvents() {
   const [fadeIn, setFadeIn] = useState(false);
@@ -32,14 +32,18 @@ function OurEvents() {
   return (
     <>
     <header>
+
+    <img src={festivelogo} alt="Festive Logo" className="festive-logo" />
       <video src={myvideo1} loop autoPlay muted></video>
       <h1 className={`fade-in ${fadeIn ? 'active' : ''} heading`}>
         <span className="welcome"> Our </span> Past Events
+        
       </h1>
+      
       <div className="headerbg"></div>
     </header>
 
-   
+ 
 
     <div className="container">
     <div className="row">
@@ -73,6 +77,7 @@ function OurEvents() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <img src={Services3} alt="Card Front Image" />
+            <div className="card-title">YS CONCERT</div>
           </div>
           <div className="flip-card-back">
             <div className="card-content">
@@ -95,6 +100,7 @@ function OurEvents() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <img src={Services4} alt="Card Front Image" />
+            <div className="card-title">YS CONCERT</div>
           </div>
           <div className="flip-card-back">
             <div className="card-content">
@@ -124,6 +130,7 @@ function OurEvents() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <img src={Services4} alt="Card Front Image" />
+            <div className="card-title">YS CONCERT</div>
           </div>
           <div className="flip-card-back">
             <div className="card-content">
@@ -145,6 +152,7 @@ function OurEvents() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <img src={Services3} alt="Card Front Image" />
+            <div className="card-title">YS CONCERT</div>
           </div>
           <div className="flip-card-back">
             <div className="card-content">
@@ -167,6 +175,7 @@ function OurEvents() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <img src={Services4} alt="Card Front Image" />
+            <div className="card-title">YS CONCERT</div>
           </div>
           <div className="flip-card-back">
             <div className="card-content">
@@ -198,6 +207,7 @@ function OurEvents() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <img src={Services4} alt="Card Front Image" />
+            <div className="card-title">YS CONCERT</div>
           </div>
           <div className="flip-card-back">
             <div className="card-content">
@@ -219,6 +229,7 @@ function OurEvents() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <img src={Services3} alt="Card Front Image" />
+            <div className="card-title">YS CONCERT</div>
           </div>
           <div className="flip-card-back">
             <div className="card-content">
@@ -241,6 +252,7 @@ function OurEvents() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <img src={Services4} alt="Card Front Image" />
+            <div className="card-title">YS CONCERT</div>
           </div>
           <div className="flip-card-back">
             <div className="card-content">

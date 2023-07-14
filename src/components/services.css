@@ -4,6 +4,7 @@
 
   color: #87CEEB;
   margin-top: 20;
+  
 }
 
 .umyservicesheading {
@@ -23,6 +24,7 @@
     flex-wrap: wrap;
     gap: 100px 50px;
     padding: 100px 50px;
+    
 }
 
 .ucontainer .ucard {
@@ -32,7 +34,7 @@
     align-items: flex-start;
     width: 350px;
     max-width: 100%;
-    height: 300px;
+    height: 320px;
     background: white;
     border-radius: 20px;
     transition: 0.5s;
@@ -53,7 +55,9 @@
     overflow: hidden;
     transition: 0.5s;
     border: 2px solid #FFC40A;
+    height: 230px;
 }
+
 
 .ucontainer .ucard:hover .uimg-box {
     top: -100px;
@@ -79,6 +83,7 @@
     text-align: center;
     overflow: hidden;
     transition: 0.5s;
+    
 }
 
 .ucontainer .ucard:hover .ucontent {
@@ -90,6 +95,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--clr);
+    
 }
 
 .ucontainer .ucard .ucontent p {

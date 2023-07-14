@@ -6,6 +6,15 @@
     padding: 0;
     
 }
+.festive-logo {
+    position: absolute;
+    top: 33px;
+    left: 140px;
+    width: 80px; /* Adjust the width as needed */
+    height: 95px; /* Adjust the height as needed */
+    z-index: 999; /* Ensure the logo appears on top of other elements */
+  
+  }
 .card-title {
     position: absolute;
     bottom: 10px;
@@ -90,7 +99,7 @@
     max-height: 100%;
 }
 .flip-card-back {
-    background-color: #555;
+    background-color: #522b4e;
     color: white;
     transform: rotateY(180deg);
     display: flex;
