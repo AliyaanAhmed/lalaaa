@@ -501,6 +501,7 @@ ul li a {
   .navbar {
     backdrop-filter: none;
     padding: 10px 0;
+    height: 90px;
   }
 
   .navbar.opened ul {
@@ -610,6 +611,7 @@ ul li a {
   .navbar {
     backdrop-filter: none;
     padding: 10px 0;
+
   }
   .navbar ul {
     backdrop-filter: blur(20px);
@@ -670,10 +672,12 @@ ul li a {
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 860px) {
   .book-now-button {
     right: 60px; /* Adjust the right value to control the button's position */
-    top: 0;
+    font-size: 12px;
+    padding: 10px 20px;
+    transform: translateY(-40%);
 
   }
 }
@@ -793,6 +797,31 @@ ul li a {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 860px){
+  /* Logo adjustments */
+.logo {
+  font-size: 20px;
+}
+
+.logo img {
+  max-width: 100%;
+  width: 60px;
+  margin-left: 20px;
+  transform: translateY(-10%);
+}
+
+/* Header video adjustments */
+header video {
+  width: 100%;
+  
+  object-fit:cover;
+}
+
+}
+.container-button{
+  margin-right: 40px;
+}
+
 
 
 

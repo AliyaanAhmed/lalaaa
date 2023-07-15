@@ -139,3 +139,15 @@
     position: absolute;
     bottom: 10px;
 }
+
+@media (max-width: 768px) {
+    .container-flip {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 60px;
+    }
+  
+    .flip-card {
+      flex-basis: 100%;
+    }
+  }

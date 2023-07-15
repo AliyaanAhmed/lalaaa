@@ -13,6 +13,7 @@
   font-weight: bold;
   margin-bottom: -20px;
   margin-top: 40px;
+  font-size: 50px;
 }
 
 
@@ -137,4 +138,16 @@
     .container .ucard .ucontent a {
         font-size: 0.9rem;
     }
+    .container-service{
+        margin-top: 100px;
+  margin-bottom: 100px;
+    }
+    .umyservicesheading{
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+.container-service{
+    margin-top: 250px;
+  margin-bottom: 250px;
 }

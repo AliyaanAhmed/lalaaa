@@ -4,9 +4,10 @@ import img1 from '../img/fess.jpg'
 
 function About() {
   return (
-    <>
+  
+    <div className="container-about">
       <section className="about-section">
-
+      
         <div className="container">
           <div className="row">
             {/* Image Column */}
@@ -23,6 +24,7 @@ function About() {
                 </figure>
               </div>
             </div>
+        
 
 
             <div className="content-column col-lg-6 col-md-12 col-sm-12 order-lg-1">
@@ -53,7 +55,7 @@ function About() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

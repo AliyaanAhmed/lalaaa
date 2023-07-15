@@ -4,6 +4,18 @@
   
 }
 
+.container-partner{
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+
+.myservicesheading{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFC40A;
+}
+
 .carousel-inner {
   display: flex;
   width: max-content;
@@ -12,7 +24,7 @@
 }
 
 .carousel-item {
-  flex: 0 0 calc((100% - 20px * 5) / 6);
+  flex: 0 0 calc((100% - 30px * 5) / 6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,5 +63,21 @@
   100% {
     opacity: 0;
     transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .myservicesheading {
+    font-size: 30px;
+  }
+
+  .container-partner{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .carousel-item {
+    flex: 0 0 calc((100% - 1px * 3) / 4);
+    margin-top: 30px;
   }
 }

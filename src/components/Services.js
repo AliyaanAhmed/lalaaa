@@ -7,7 +7,7 @@ import card3 from '../img/card3.jpg'
 function Card(props) {
   return (
 
-    <>
+    <div className="container-service">
      <h1 className="umyservicesheading">OUR SERVICES</h1>
       <div className="container">
         <div className="row">
@@ -52,7 +52,7 @@ function Card(props) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

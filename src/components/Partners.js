@@ -12,6 +12,7 @@ const logos = [nikeLogo, uberLogo, nikeLogo, uberLogo, nikeLogo, uberLogo];
 
 const partners = () => {
   return (
+    <div className="container-partner">
     <div className="logo-carousel">
       <h1 className="myservicesheading">OUR PARTNERS</h1>
       <div className="carousel-inner">
@@ -21,6 +22,7 @@ const partners = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

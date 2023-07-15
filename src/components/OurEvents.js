@@ -45,11 +45,10 @@ function OurEvents() {
 
  
 
-    <div className="container">
+    <div className="container-flip">
     <div className="row">
       
       <div className="flip-card">
-        
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <img src={Services4} alt="Card Front Image" />
@@ -124,7 +123,7 @@ function OurEvents() {
 
      
 
-      <div className="container">
+      <div className="container-flip">
     <div className="row">
       <div className="flip-card">
         <div className="flip-card-inner">
@@ -201,7 +200,7 @@ function OurEvents() {
 
 
 
-    <div className="container">
+    <div className="container-flip">
     <div className="row">
       <div className="flip-card">
         <div className="flip-card-inner">
